@@ -2,14 +2,14 @@ pipeline {
     agent any
    
     environment {
-        AWS_ACCESS_KEY_ID = credentials('ABREHAM_AWS_ACCESS_KEY_ID')
-        AWS_SECRET_ACCESS_KEY = credentials('ABREHAM_AWS_SECRET_ACCESS_KEY')
+        AWS_ACCESS_KEY_ID = credentials(' ABREHAM_AWS_ACCESS_KEY_ID')
+        AWS_SECRET_ACCESS_KEY = credentials(' ABREHAM_AWS_SECRET_ACCESS_KEY')
         AWS_DEFAULT_REGION = "us-west-2"
     }
     stages {
         stage('Checkout') {
             steps {
-           git branch: 'main', url: 'https://github.com/aget2101/infra-jan24.git'
+           git branch: 'main', url: ' https://github.com/aget2101/infra-jan24.git'
   
             }
         }
