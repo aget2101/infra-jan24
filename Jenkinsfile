@@ -35,8 +35,8 @@ pipeline {
            //    expression { params.destroy }
          //   }
             steps {
-                  sh "aws eks update-kubeconfig --name eks_cluster"
-                   sh "kubectl apply -f deployment.yml"
+               #   sh "aws eks update-kubeconfig --name eks_cluster"
+             #      sh "kubectl apply -f deployment.yml"
              }
         }
     }
